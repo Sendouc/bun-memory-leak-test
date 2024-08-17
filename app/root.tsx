@@ -7,6 +7,10 @@ import {
 } from "@remix-run/react";
 import "./tailwind.css";
 
+export const loader = () => {
+  return { foo: "bar" };
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
